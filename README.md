@@ -8,8 +8,5 @@ A Max Heap is a complete binary tree where every parent node holds a value great
 |**Relationship**| **Formula:**|
 |----------------|-------------|
 | Parent of      | i(i - 1) / 2|
-|----------------|-------------|
 | Left child of  | 2i * i + 1  |
-|----------------|-------------|
 | Right child of | i2 * i + 2  |
-|----------------|-------------|
