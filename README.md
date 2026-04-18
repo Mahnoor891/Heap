@@ -12,14 +12,14 @@ A Max Heap is a complete binary tree where every parent node holds a value great
 | Right child of | i2 * i + 2  |
 
 ### Core Functions
-#### **UpHeapify(int idx)**
+#### **1. UpHeapify(int idx)**
 Called after insertion. Compares the newly added element at idx with its parent and bubbles it upward until the heap property is restored.
 **Runs recursively from child → root**
 
 **Time complexity: O(log n)**
 
 
-#### **DownHeapify(int i, int size)**
+#### **2. DownHeapify(int i, int size)**
 Called after deletion. Pushes the element at index i downward by repeatedly swapping it with the larger of its two children, until it reaches its correct position.
 
 Compares left and right children, swaps with the largest
@@ -29,7 +29,7 @@ Runs recursively from root → leaf
 **Time complexity: O(log n)**
 
 
-#### **insert(int val)**
+#### **3. insert(int val)**
 Inserts a new value into the heap:
 
 **Places the value at the next available index (arr[n])**
@@ -42,7 +42,7 @@ Inserts a new value into the heap:
 ⚠️ The heap is capped at 7 elements (int arr[7]). Insertion is blocked when full.
 
 
-#### **Delete()**
+#### **4. Delete()**
 Removes the maximum element (the root):
 
 Swaps arr[0] (root/max) with arr[n-1] (last element)
@@ -53,10 +53,10 @@ Calls DownHeapify(0, n) to restore the heap property
 **Time complexity: O(log n)**
 
 
-#### **Display()**
+#### **5. Display()**
 Prints the current heap contents in array order (level-order traversal of the tree), from index 0 to n-1.
 
-#### **HeapSort()**
+#### **6. HeapSort()**
 Sorts the heap array in ascending order in-place:
 
 Repeatedly swaps the root (max) with the last unsorted element
