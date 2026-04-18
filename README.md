@@ -15,6 +15,7 @@ A Max Heap is a complete binary tree where every parent node holds a value great
 #### **UpHeapify(int idx)**
 Called after insertion. Compares the newly added element at idx with its parent and bubbles it upward until the heap property is restored.
 **Runs recursively from child → root**
+
 **Time complexity: O(log n)**
 
 
@@ -22,7 +23,9 @@ Called after insertion. Compares the newly added element at idx with its parent 
 Called after deletion. Pushes the element at index i downward by repeatedly swapping it with the larger of its two children, until it reaches its correct position.
 
 **Compares left and right children, swaps with the largest**
+
 **Runs recursively from root → leaf**
+
 **Time complexity: O(log n)**
 
 
@@ -30,7 +33,9 @@ Called after deletion. Pushes the element at index i downward by repeatedly swap
 Inserts a new value into the heap:
 
 **Places the value at the next available index (arr[n])**
+
 **Calls UpHeapify(n) to restore the heap property**
+
 **Increments n**
 
 
@@ -61,6 +66,7 @@ Restores n to original and prints the sorted array
 
 
 **Time complexity: O(n log n)**
+
 **Space complexity: O(1) — fully in-place**
 
 
