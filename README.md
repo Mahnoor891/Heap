@@ -12,19 +12,19 @@ A Max Heap is a complete binary tree where every parent node holds a value great
 | Right child of | i2 * i + 2  |
 
 ### Core Functions
-#### <u> **UpHeapify(int idx)** </u>
+#### **UpHeapify(int idx)**
 Called after insertion. Compares the newly added element at idx with its parent and bubbles it upward until the heap property is restored.
 **Runs recursively from child → root**
 
 **Time complexity: O(log n)**
 
 
-##### **DownHeapify(int i, int size)**
+#### **DownHeapify(int i, int size)**
 Called after deletion. Pushes the element at index i downward by repeatedly swapping it with the larger of its two children, until it reaches its correct position.
 
-**Compares left and right children, swaps with the largest**
+Compares left and right children, swaps with the largest
 
-**Runs recursively from root → leaf**
+Runs recursively from root → leaf
 
 **Time complexity: O(log n)**
 
