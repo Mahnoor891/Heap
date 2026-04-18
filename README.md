@@ -69,5 +69,3 @@ Restores n to original and prints the sorted array
 
 **Space complexity: O(1) — fully in-place**
 
-
-⚠️ Note: After HeapSort(), the heap property is destroyed — the array is now sorted ascending, not a valid max heap
